@@ -1,14 +1,20 @@
 # TODO: Implement a function that returns a list of numbers from 1 to n
 def generate_numbers(n):
-    pass
+    return list(range(1,n+1))
 
 # TODO: Implement a function that returns a dictionary where keys are numbers from 1 to n and values are their squares
 def generate_squares(n):
-    pass
+    return list(range(1,n+1)**2)
 
 # TODO: Implement a function that merges two lists in an alternating fashion
 def merge_lists(list1, list2):
-    pass
+    merged_lst = []
+    min_len = min(len(list1), len(list2))
+ 
+    for i in range(min_len):
+        merged_lst.append(list1[i])
+        merged_lst.append(list2[i]) 
+     
 
 # TODO: Implement a function that returns a list and replicates the dictionary keys based on their respective values
 def multiply_keys(data):
